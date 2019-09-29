@@ -38,6 +38,56 @@
                 android:text=""
                 android:textSize="40sp" />
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/allbackground"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bAC"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/Button"
+                android:text="C"
+                android:textSize="24sp" />
+            <Button
+                android:id="@+id/bDEL"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/Button"
+                android:text="DEL"
+                android:textSize="24sp" />
+
+
+            <Button
+                android:id="@+id/broot"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/Button"
+                android:text="√"
+                android:textSize="24sp" />
+
+
+            <Button
+                android:id="@+id/badd"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:background="@color/Button"
+                android:text="+"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
 
 
 
