@@ -13,14 +13,14 @@ public class MainActivity extends AppCompatActivity {
     Button B1,B2,B3,B4,B5,B6,B7,B8,B9,B0,Bpoint,Bequ,Badd,Bsub,Bmul,Bdiv,Bmod,BAC,BDEL,Broot;
     boolean add,sub,mul,div,mod;
     double var1,var2;
-    TextView text,ans;
+    TextView ans,ans2;
     String del;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        B1 = findViewById(R.id.b1);
+         B1 = findViewById(R.id.b1);
         B2 = findViewById(R.id.b2);
         B3 = findViewById(R.id.b3);
         B4 = findViewById(R.id.b4);
@@ -40,85 +40,85 @@ public class MainActivity extends AppCompatActivity {
         Broot = findViewById(R.id.broot);
         BAC = findViewById(R.id.bAC);
         BDEL = findViewById(R.id.bDEL);
-        text = findViewById(R.id.bcontent);
-        ans = findViewById(R.id.bresult);
+        ans = findViewById(R.id.bcontent);
+        ans2 = findViewById(R.id.bresult);
 
         B1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"1");
+                ans.setText(ans.getText()+"1");
             }
         });
         B2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"2");
+                ans.setText(ans.getText()+"2");
             }
         });
         B3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"3");
+                ans.setText(ans.getText()+"3");
             }
         });
         B4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"4");
+                ans.setText(ans.getText()+"4");
             }
         });
         B5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"5");
+                ans.setText(ans.getText()+"5");
             }
         });
         B6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"6");
+                ans.setText(ans.getText()+"6");
             }
         });
         B7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"7");
+                ans.setText(ans.getText()+"7");
             }
         });
         B8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"8");
+                ans.setText(ans.getText()+"8");
             }
         });
         B9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"9");
+                ans.setText(ans.getText()+"9");
             }
         });
         B0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+"0");
+                ans.setText(ans.getText()+"0");
             }
         });
         Bpoint.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(text.getText()+".");
+                ans.setText(ans.getText()+".");
             }
         });
         Badd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(text==null){
-                    text.setText("");
+                if(ans==null){
+                    ans.setText("");
                 }
                 else {
-                    var1=Double.parseDouble(text.getText()+"");
+                    var1=Double.parseDouble(ans.getText()+"");
                     add=true;
-                    text.setText(null);
+                    ans.setText(null);
                 }
 
             }
@@ -126,13 +126,13 @@ public class MainActivity extends AppCompatActivity {
         Bsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(text==null){
-                    text.setText("");
+                if(ans==null){
+                    ans.setText("");
                 }
                 else{
-                    var1=Double.parseDouble(text.getText()+"");
+                    var1=Double.parseDouble(ans.getText()+"");
                     sub=true;
-                    text.setText(null);
+                    ans.setText(null);
                 }
 
             }
@@ -140,13 +140,13 @@ public class MainActivity extends AppCompatActivity {
         Bmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(text==null){
-                    text.setText("");
+                if(ans==null){
+                    ans.setText("");
                 }
                 else{
-                    var1=Double.parseDouble(text.getText()+"");
+                    var1=Double.parseDouble(ans.getText()+"");
                     mul=true;
-                    text.setText(null);
+                    ans.setText(null);
                 }
 
             }
@@ -154,13 +154,13 @@ public class MainActivity extends AppCompatActivity {
         Bdiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(text==null){
-                    text.setText("");
+                if(ans==null){
+                    ans.setText("");
                 }
                 else{
-                    var1=Double.parseDouble(text.getText()+"");
+                    var1=Double.parseDouble(ans.getText()+"");
                     div=true;
-                    text.setText(null);
+                    ans.setText(null);
                 }
 
             }
@@ -168,13 +168,13 @@ public class MainActivity extends AppCompatActivity {
         Bmod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(text==null){
-                    text.setText("");
+                if(ans==null){
+                    ans.setText("");
                 }
                 else{
-                    var1=Double.parseDouble(text.getText()+"");
+                    var1=Double.parseDouble(ans.getText()+"");
                     mod=true;
-                    text.setText(null);
+                    ans.setText(null);
                 }
 
             }
@@ -182,29 +182,29 @@ public class MainActivity extends AppCompatActivity {
         BAC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                text.setText(null);
                 ans.setText(null);
+                ans2 .setText(null);
             }
         });
         BDEL.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                del=text.getText().toString();
+                del=ans.getText().toString();
                 del=del.substring(0,del.length()-1);
-                text.setText(del+"");
+                ans.setText(del+"");
 
             }
         });
         Broot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(text==null){
-                    text.setText("");
+                if(ans==null){
+                    ans.setText("");
                 }
                 else{
-                    var1=Double.parseDouble(text.getText()+"");
+                    var1=Double.parseDouble(ans.getText()+"");
                     var2=sqrt(var1);
-                    ans.setText(var2+"");
+                    ans2.setText(var2+"");
                 }
 
             }
@@ -216,35 +216,34 @@ public class MainActivity extends AppCompatActivity {
 
                 var2=Double.parseDouble(ans.getText()+"");
                 if(add==true){
-                    ans.setText(var1+var2+"");
+                    ans2.setText(var1+var2+"");
                     add=false;
                 }
                 if(sub==true){
-                    ans.setText(var1-var2+"");
+                    ans2.setText(var1-var2+"");
                     sub=false;
                 }
                 if(mul==true){
-                    ans.setText(var1*var2+"");
+                    ans2.setText(var1*var2+"");
                     mul=false;
                 }
                 if(div==true){
-                    ans.setText(var1/var2+"");
+                    ans2.setText(var1/var2+"");
                     div=false;
                 }
                 if(mod==true){
                     if(var2==0){
-                        ans.setText("error");
+                        ans2.setText("error");
 
                     }
                     else{
-                        ans.setText(var1%var2+"");
+                        ans2.setText(var1%var2+"");
                         mod=false;
                     }
                 }
             }
 
         });
-
 
     }
 }
